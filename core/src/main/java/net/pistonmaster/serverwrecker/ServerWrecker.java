@@ -181,6 +181,7 @@ public class ServerWrecker {
             logger.info("Connecting bot {}", i);
 
             client.connect(options.hostname(), options.port());
+            client.setLocation();
         }
     }
 

@@ -29,6 +29,8 @@ public abstract class AbstractBot {
     private float health = -1;
     private float food = -1;
 
+    public abstract void sendLocation(EntityLocation location);
+
     public abstract void sendMessage(String message);
 
     public abstract void connect(String host, int port);

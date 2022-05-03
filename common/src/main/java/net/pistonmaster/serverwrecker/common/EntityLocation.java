@@ -20,9 +20,9 @@
 package net.pistonmaster.serverwrecker.common;
 
 public record EntityLocation(
-		double posX,
-		double posY,
-		double posZ,
+		double x,
+		double y,
+		double z,
 		float pitch,
 		float yaw
 ) {

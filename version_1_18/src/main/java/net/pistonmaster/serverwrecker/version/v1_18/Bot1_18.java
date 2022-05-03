@@ -74,6 +74,11 @@ public class Bot1_18 extends AbstractBot {
         session.connect();
     }
 
+    @Override
+    public void sendLocation(EntityLocation location) {
+        session.send(new ServerboundMovePlayerPosPacket(location.x(), location.y(), location.z()));
+    }
+
     public void sendMessage(String message) {
         session.send(new ServerboundChatPacket(message));
     }
